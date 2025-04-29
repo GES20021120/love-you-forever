@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.hint {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+@keyframes colorChange {
+    0% { color: #ff6b6b; }
+    50% { color: #ff9eb1; }
+    100% { color: #ff6b6b; }
+}
+
+.heart {
+    font-size: 80px;
+    margin: 20px 0;
+    animation: beat 1s infinite, colorChange 2s infinite;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+ border   : 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff5252;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    min-height: 50px;
+}
